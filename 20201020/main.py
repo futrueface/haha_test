@@ -1,11 +1,11 @@
 import random
 
-
 # 规则
 # 各进攻一次，hp为0者失败，游戏终结
 
+
 # 进攻过程
-def fight(x_hp, x_power, y_hp, y_power):
+def test_fight(x_hp, x_power, y_hp, y_power):
     roundq = 1
     while True:
         p_round = '第' + str(roundq) + '回合:'
@@ -37,7 +37,7 @@ if __name__ == "__main__":
         # b = random.choice(both_hp_info)
         # c = random.choice(both_hp_info)
         # d = random.choice(both_hp_info)
-        result = fight(both_hp_info[0], both_power_info[0], both_hp_info[1], both_power_info[1])
+        result = test_fight(both_hp_info[0], both_power_info[0], both_hp_info[1], both_power_info[1])
 
         if result == 'we win':
             print(result, '双方数据：', both_hp_info[0], both_power_info[0], both_hp_info[1], both_power_info[1])
